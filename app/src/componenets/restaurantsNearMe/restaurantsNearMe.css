@@ -1,0 +1,13 @@
+.restaurant-overview{
+    height: 350px;
+    background-image: url('../../assets/wallpaper_restaurants.png');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    
+}

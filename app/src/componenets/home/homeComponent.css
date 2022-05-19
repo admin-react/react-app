@@ -1,0 +1,11 @@
+.overview{
+    background-image: url('../../assets/wallpaper_red.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: white;
+    background-attachment: fixed;
+}
+.row{
+    margin: 0px;
+}

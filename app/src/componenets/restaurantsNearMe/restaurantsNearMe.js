@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../restaurantsNearMe/restaurantsNearMe.css';
 import { useAuth0 } from '@auth0/auth0-react';
+import CircularProgress from '@mui/material/CircularProgress';
 import axios from 'axios';
 
 import RestaurantComponent from './restaurantComponent/RestaurantComponent.js';
@@ -47,16 +48,18 @@ let RestaurantsNearMe = () => {
                 <input type="text" className="form-control" placeholder="Enter delivery adress" style={{ 'width': '400px' }} />
             </div>
             <div className='restaurants' style={{ 'marginTop': '50px' }}>
-                <div style={{ 'marginRight': '50px', 'display': 'flex', 'justifyContent': 'center', 'textAlign': 'left'}}>
-                    <div style={{ 'marginRight': '20px' }}>
-                        <h3>Best restaurants in Čačak</h3>
-                        <p>43 restaurants in Čačak</p>
-                    </div>
+                <div>
                     {data ?
-                        <div>
-                            {ShowRestaurants}
+                        <div style={{ 'marginRight': '50px', 'display': 'flex', 'justifyContent': 'center', 'textAlign': 'left' }}>
+                            <div style={{ 'marginRight': '20px' }}>
+                                <h3>Best restaurants in Čačak</h3>
+                                <p>43 restaurants in Čačak</p>
+                            </div>
+                            <div>
+                                {ShowRestaurants}
+                            </div>
                         </div>
-                        : ''}
+                        : <CircularProgress />}
                 </div>
             </div>
         </div>

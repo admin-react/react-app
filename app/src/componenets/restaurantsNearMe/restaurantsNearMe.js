@@ -43,7 +43,7 @@ let RestaurantsNearMe = () => {
 
             </div>
             <div className='restaurant-overview'>
-                <h2 >Restaurants near me</h2>
+                <h1 >Restaurants near me</h1>
                 <p>Order online for Frite Bistro's super-fast delivery or pick-up.</p>
                 <input type="text" className="form-control" placeholder="Enter delivery adress" style={{ 'width': '400px' }} />
             </div>
@@ -52,7 +52,7 @@ let RestaurantsNearMe = () => {
                     {data ?
                         <div style={{ 'marginRight': '50px', 'display': 'flex', 'justifyContent': 'center', 'textAlign': 'left' }}>
                             <div style={{ 'marginRight': '20px' }}>
-                                <h3>Best restaurants in Čačak</h3>
+                                <h2>Best restaurants in Čačak</h2>
                                 <p>43 restaurants in Čačak</p>
                             </div>
                             <div>

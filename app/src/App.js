@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import HomeComponent from './componenets/home/homeComponent';
 import RestaurantsNearMe from './componenets/restaurantsNearMe/restaurantsNearMe';
+import RestaruantStore from './componenets/restaurantsNearMe/restaurantStore/RestaurantStore';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomeComponent />} />
         <Route path='/restaurants-near-me' element={<RestaurantsNearMe />} />
+        <Route path='/store/:id' element={<RestaruantStore/>}/>
       </Routes>
     </div>
   );

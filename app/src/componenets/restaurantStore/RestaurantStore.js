@@ -1,13 +1,13 @@
 import React from 'react';
-import {useParams} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 let RestaruantStore = () => {
 
-const {id} = useParams();
+    const { id } = useParams();
 
 
 
 
-    return(
+    return (
         <div>
             <p>Store works!: {id}</p>
         </div>

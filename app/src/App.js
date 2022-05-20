@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import HomeComponent from './componenets/home/homeComponent';
 import RestaurantsNearMe from './componenets/restaurantsNearMe/restaurantsNearMe';
-import RestaruantStore from './componenets/restaurantsNearMe/restaurantStore/RestaurantStore';
+import RestaruantStore from './componenets/restaurantStore/RestaurantStore';
 
 function App() {
 

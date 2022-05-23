@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import '../restaurantComponent/RestaurantComponent.css';
 import { Link } from 'react-router-dom';
 
-import image1 from '../../../assets/thirteen/trinaestica-1.jpg'
-import image2 from '../../../assets/thirteen/trinaestica-2.jpg'
-import image3 from '../../../assets/thirteen/trinaestica-3.jpg'
-import image4 from '../../../assets/thirteen/trinaestica-4.jpg'
 
 let RestaurantComponent = (props) => {
 
@@ -17,7 +13,8 @@ let RestaurantComponent = (props) => {
         setShowPopular(!showPopular);
     }
 
-    let popularItems = 'Hello'
+    let popularItems = ''
+    let dishImages = ""
     if(props.data.dishes){
     popularItems = JSON.parse(props.dishes).map((el, index)=>(
         <div className='popular-item' key={index}>
@@ -27,6 +24,10 @@ let RestaurantComponent = (props) => {
         <p>{el.description}</p>
     </div>
     ))
+
+    dishImages = JSON.parse(props.dishes).map((el, index)=>(
+        <img width={125} height={125} src={el.image} alt='#' style={{ 'marginLeft': '6px' }} key={index} />
+    ))
     }
 
     return (
@@ -34,10 +35,7 @@ let RestaurantComponent = (props) => {
             <div>
                 <div className='restauran-main'>
                     <div style={{ 'display': 'flex' }}>
-                        <img width={125} height={125} src={image2} alt='#' />
-                        <img width={125} height={125} src={image1} alt='#' style={{ 'marginLeft': '10px' }} />
-                        <img width={125} height={125} src={image3} alt='#' style={{ 'marginLeft': '10px' }} />
-                        <img width={125} height={125} src={image4} alt='#' style={{ 'marginLeft': '10px' }} />
+                        {dishImages}
                     </div>
                     <h5><Link to={'/store/'+props.data.name} style={{ 'color':'black', 'textDecoration':'none' }}>{props.data.name}</Link></h5>
                     <p>{props.data.adress}</p>

@@ -1,0 +1,27 @@
+.store-header{
+    height:'400px';
+    background-image: url('../../assets/food.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    border-radius: 30px;
+    box-shadow: 2px 7px 10px 1px rgba(0, 0, 0, 0.2)
+}
+
+.store-header > img {
+    box-shadow: 2px 7px 10px 1px rgba(0, 0, 0, 0.2)
+}
+
+.store-logo{
+    margin-top: 200px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 25px;
+}
+
+.store-body{
+    padding: 30px;
+}

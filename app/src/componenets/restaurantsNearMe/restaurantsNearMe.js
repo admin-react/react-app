@@ -40,7 +40,6 @@ let RestaurantsNearMe = () => {
                 {user !== undefined ?
                     <div><img src={user.picture} style={{ 'height': '40px', 'width': '40px', 'borderRadius': '50%' }} alt='#' /><button className='btn btn-link' style={{ 'color': 'black', 'textDecoration': 'none', 'fontWeight': 'bold' }} onClick={() => logout()}>Log out</button></div>
                     : <button className='btn btn-light' style={{ 'borderRadius': '30px', 'fontWeight': 'bold', 'backgroundColor': '#D6D6D6' }} onClick={() => loginWithRedirect()}>Sign up</button>}
-
             </div>
             <div className='restaurant-overview'>
                 <h1 >Restaurants near me</h1>
@@ -53,7 +52,7 @@ let RestaurantsNearMe = () => {
                         <div style={{ 'marginRight': '50px', 'display': 'flex', 'justifyContent': 'center', 'textAlign': 'left' }}>
                             <div style={{ 'marginRight': '20px' }}>
                                 <h2>Best restaurants in Čačak</h2>
-                                <p>43 restaurants in Čačak</p>
+                                <p>4 restaurants in Čačak</p>
                             </div>
                             <div>
                                 {ShowRestaurants}
